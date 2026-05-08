@@ -1,12 +1,13 @@
 import React from "react";
-import { View, Text }  from "react-native";
-
-const RegisterForm = () => {
+import AuthTemplate from "../../components/templates";
+import { RegisterForm } from "../../components/organism";
+ 
+const RegisterPage = () => {
     return (
-        <View>
-            <Text>Register Form</Text>
-        </View>
+        <AuthTemplate title="Create Account" subtitle="Sign up to get started">
+            <RegisterForm />
+        </AuthTemplate>
     );
-}
-
-export default RegisterForm;
+};
+ 
+export default RegisterPage;
