@@ -1,12 +1,15 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { AuthStackParamList } from './routes';
+import { AuthStackParamList } from './Routes';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { enableScreens } from 'react-native-screens';
 import { LoginPage, RegisterPage } from './screens';
- 
+
+enableScreens();
+
 const Stack = createNativeStackNavigator<AuthStackParamList>();
- 
+
 const App = () => {
   return (
     <SafeAreaProvider>
@@ -24,6 +27,5 @@ const App = () => {
     </SafeAreaProvider>
   );
 };
- 
+
 export default App;
- 
