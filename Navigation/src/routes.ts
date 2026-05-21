@@ -1,4 +1,6 @@
-export type AuthStackParamList = {
-    Login: undefined;
-    Register: undefined;
-}
+export type AppStackParamList = {
+  Login: undefined;
+  Register: undefined;
+  Dashboard: undefined;
+  RegisterProduct: undefined;
+};

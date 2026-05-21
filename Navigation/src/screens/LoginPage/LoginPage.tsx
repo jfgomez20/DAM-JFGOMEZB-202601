@@ -3,14 +3,13 @@ import { AuthTemplate } from "../../components/templates";
 import { LoginForm } from "../../components/organisms";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { AuthStackParamList } from "../../Routes";
+import { AppStackParamList } from "../../Routes";
 
 const LoginPage = () => {
-    const navigation = useNavigation<NativeStackNavigationProp<AuthStackParamList>>();
+    const navigation = useNavigation<NativeStackNavigationProp<AppStackParamList>>();
 
     const handleLogin = () => {
-        console.log("Tap en iniciar sesión");
-        navigation.navigate("Register");
+        navigation.navigate("Dashboard");
     };
 
     return (
